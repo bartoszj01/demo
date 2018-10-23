@@ -1,0 +1,23 @@
+Hallo @Bartosz Jarmolinski ,
+es sollte - das geht aus dem Dokument nicht hervor - eine Plausibilitätsprüfung der Eingaben erfolgen: das Auslieferungs- bzw. Inbetriebnahmedatum sollte nicht in der Zukunft liegen dürfen.
+
+Der Warrantyindicator sollte auch via API abrufbar sein, damit wir eure Logik nicht nachprogrammieren müssen, sondern in den Portalen für Kunden und Partner übernehmen können. Ist das der Fall?
+
+Ist das für DE oder auch z.B. für USA?
+Funktioniert das dann auch automatisch mit dem Commissioning Assistant, oder?
+
+LG
+Norbert
+
+Inbetriebnahmedatum die von CommAssist kommt ist das aktuelle Datum, also liegt nie in der Zukunft. Es bigt keine Validierung
+auf dem Feld ShippingDate, ich kann eine einstellen, aber muss überprüfen ob es keine negative Auswirkungen auf 
+anderen Funktionalitäten hätte.
+
+Der Warrantyindicator ist einfach ein Formelfeld dessen Wert via API abrufbar ist. Der Wert ist aber kein Bild, 
+sondern ein Verzeichnis wo Salesforce die Bilder speichert mit Referenz zu dem Bild, z.B. '<img src="/img/samples/color_red.gif" alt="red" style="height:20px; width:20px;" border="0"/>'
+Aber da steht der Name der Indikatoren (red, green, yellow). Reicht euch das aus?
+
+Mit CommAssist ist das indirekt verbunden: der CA liefert IN Commissioning Date, das dann 
+zum Feld Installation & Commissioning kopiert wird - und das Feld ist in den Indikatorformeln für Standard und Extended referenziert.
+
+Das kann in DACH, USA und den anderen Länder benutzt werden.
