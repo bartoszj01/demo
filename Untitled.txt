@@ -1,4 +1,4 @@
-Hallo @Bartosz Jarmolinski ,
+﻿Hallo @Bartosz Jarmolinski ,
 es sollte - das geht aus dem Dokument nicht hervor - eine Plausibilitätsprüfung der Eingaben erfolgen: das Auslieferungs- bzw. Inbetriebnahmedatum sollte nicht in der Zukunft liegen dürfen.
 
 Der Warrantyindicator sollte auch via API abrufbar sein, damit wir eure Logik nicht nachprogrammieren müssen, sondern in den Portalen für Kunden und Partner übernehmen können. Ist das der Fall?
@@ -21,3 +21,5 @@ Mit CommAssist ist das indirekt verbunden: der CA liefert IN Commissioning Date,
 zum Feld Installation & Commissioning kopiert wird - und das Feld ist in den Indikatorformeln für Standard und Extended referenziert.
 
 Das kann in DACH, USA und den anderen Länder benutzt werden.
+
+CHANGED 30/10/18
